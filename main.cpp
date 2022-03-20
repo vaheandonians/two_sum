@@ -5,8 +5,8 @@
 std::vector<int> two_sum(std::vector<int>& nums, int target) {
     std::unordered_map<int, int> complement;
     int currentIndex = 0;
-    for(int& num : nums) {
-        if(complement.find(num) != complement.end()) {
+    for (int& num : nums) {
+        if (complement.find(num) != complement.end()) {
             return { complement[num], currentIndex };
         } else {
             int numberNeeded = target - num;
